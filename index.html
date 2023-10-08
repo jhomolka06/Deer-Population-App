@@ -1,0 +1,65 @@
+
+<!-- Using HTML, Bootstrap, and JavaScript create a single page website that contains the following:
+A Bootstrap styled table representing your choice of data.
+A Bootstrap styled form that allows a user to add a new row to the table when clicking on submit. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitetail Deer Population</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="container mt-5 p-3 mb-2 bg-success text-white">
+        <h1>Whitetail Deer Population by State</h1>
+
+        <!-- This is a table to display the deers population -->
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>State</th>
+                    <th>Population</th>
+                </tr>
+            </thead>
+            <tbody id="deerTableBody">
+               
+            </tbody>
+        </table>
+
+        <!-- This is a form to add new data -->
+        <form id="deerForm" class="form-inline">
+            <div class="form-group">
+                <input type="text" class="form-control" id="stateInput" placeholder="State" required>
+            </div>
+            <div class="form-group ml-2">
+                <input type="number" class="form-control" id="populationInput" placeholder="Population" required>
+            </div>
+            <button type="submit" class="btn btn-primary ml-2">Add</button>
+            <button type="button" class="btn btn-secondary ml-2" id="resetForm">Reset</button> <!-- This will add the reset button -->
+        </form>
+    </div>
+
+<br>
+<br>
+<br>
+<br>
+
+    <div class="text-center ">
+        <img src="https://www.lifeinthefingerlakes.com/wp-content/uploads/2016/11/rut.jpg" class="img-fluid rounded"  alt="picture of deer">
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
+    <script src="index.js"></script>
+</body>
+<br>
+<br>
+<br>
+<footer class="text-center">Established in 1776</footer>
+
+</html>
